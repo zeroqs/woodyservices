@@ -1,0 +1,33 @@
+
+.Repair {
+  padding: 140px 10px 0px 10px;
+  position: relative;
+
+}
+
+.Cards {
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  position: absolute;
+  display: flex;
+  top: -75px;
+  max-width: 1170px;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  @media (max-width: rem(750)){
+    content-visibility: hidden;
+  }
+}
+.CardsMobile {
+  text-align: -webkit-center;
+  content-visibility: hidden;
+  @media (max-width: rem(750)){
+    margin-top: -210px;
+    padding-bottom: 50px;
+    content-visibility: visible;
+  }
+}

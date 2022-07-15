@@ -1,0 +1,72 @@
+@import "../../scss/main";
+
+.Protect {
+  padding: 0px 10px 100px 10px;
+  max-width: 1150px;
+  margin: 0 auto;
+  display: flex;
+  gap: 10%;
+  flex-wrap: wrap;
+  .Text {
+    @media (max-width: rem(1093)){
+      text-align: center;
+      flex: 1 1 auto;
+    }
+    flex: 1 1 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    h1 {
+      color: $mainColor;
+      font-weight: 500;
+      font-size: rem(40);
+      display: inline;
+      text-transform: uppercase;
+    }
+    h2 {
+      font-weight: 500;
+      font-size: rem(20);
+      display: inline;
+      color: $mainColor;
+      a {
+        color: #E41F7B;
+        text-transform: uppercase;
+
+      }
+    }
+  }
+  .Slider {
+    display: grid;
+    flex: 1 1 40%;
+    row-gap: 5px;
+    column-gap: 5px;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(2,1fr);
+    @media (max-width: rem(1093)){
+      content-visibility: hidden;
+    }
+  }
+  .SliderMob {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    content-visibility: hidden;
+    @media (max-width: rem(1093)){
+      content-visibility: visible;
+    }
+  }
+}
+.button {
+  text-transform: uppercase;
+  padding: 17px 90px;
+  background-color: $buttonColor;
+  color: #FAFAFA;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 0.3em;
+  border-radius: 8px;
+  &:hover {
+    transition: background-color 0.5s;
+    background-color: $colorHover;
+  }
+}

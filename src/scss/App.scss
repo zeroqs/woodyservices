@@ -1,0 +1,16 @@
+@import 'main';
+
+
+* {
+  font-size: $fontSize;
+}
+
+.App {
+  overflow: hidden;
+}
+
+.preview {
+  padding-bottom: 50px;
+  background: rgb(219,7,131);
+  background: linear-gradient(147deg, rgba(219,7,131,1) 0%, rgba(147,5,147,1) 100%);
+}

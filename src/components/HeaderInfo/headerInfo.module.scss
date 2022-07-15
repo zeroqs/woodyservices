@@ -1,0 +1,59 @@
+@import "../../scss/main";
+
+.headerPost {
+  align-items: center;
+  gap: 5%;
+  display: flex;
+  padding: 190px 150px;
+
+}
+.wrap {
+  padding: 0px 10px 0px 20px;
+  border-radius: 30px;
+  background: #FFFFFF;
+  max-width: 1554px;
+  margin: 0 auto;
+  @media (max-width: rem(1560)){
+    padding: 21px 10px;
+    .headerPost {
+      padding: 10px 20px;
+    }
+  }
+
+  @media (max-width: rem(1390)){
+    max-width: 1130px;
+    padding: 21px 10px;
+    .headerPost {
+      padding: 10px 20px;
+    }
+  }
+
+  @media (max-width: rem(1250)){
+    max-width: 990px;
+    padding: 21px 10px;
+    .headerPost {
+      padding: 50px 20px;
+      @media (max-width: rem(855)){
+        text-align: center;
+        display: block;
+        padding: 5px;
+      }
+    }
+  }
+
+  @media (max-width: rem(990)){
+    max-width: 930px;
+    padding: 21px 10px;
+
+  }
+
+
+}
+.HeaderImages {
+  flex: 1 1 40%;
+  display: flex;
+  gap: 10px;
+  @media (max-width: rem(855)) {
+    content-visibility: hidden;
+  }
+}

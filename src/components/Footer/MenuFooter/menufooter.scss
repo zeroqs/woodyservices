@@ -1,0 +1,17 @@
+.MenuFooterMobile {
+  .rs-panel-header {
+    color: #fafafa;
+  }
+  .rs-panel-group>.rs-panel+.rs-panel:before {
+    content: none;
+
+  }
+  span {
+    font-weight: 500;
+    font-size: 20px;
+  }
+  .rs-icon {
+    font-size: 30px;
+    color: #fafafa !important;
+  }
+}

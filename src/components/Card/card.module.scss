@@ -1,0 +1,43 @@
+@import "../../scss/main";
+
+.Card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 13px rgba(113, 74, 132, 0.4);
+  border-radius: 10px;
+  max-width: 360px;
+  height: 150px;
+  background: #fff;
+  .CardIcon {
+    border-radius: 7px;
+    border: 2px solid transparent;
+    background: linear-gradient(147deg, rgb(219, 7, 131) 0%, rgb(147, 5, 147) 100%);
+    box-shadow: inset 0px 0px 0px 100vw #fff;
+    img {
+      padding: 10px;
+    }
+  }
+  .CardText {
+    flex: 1 1 auto;
+  }
+}
+
+.CardContent {
+  padding: 0px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  h1 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: rem(20);
+    color: $colorCardsTitle;
+  }
+  span {
+    color: $mainColor;
+    padding-top: 5px;
+    display: inline-block;
+  }
+}

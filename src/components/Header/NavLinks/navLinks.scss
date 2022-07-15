@@ -1,0 +1,20 @@
+@import "../../../scss/main";
+
+.rs-dropdown-menu {
+  flex-direction: column;
+}
+.rs-nav-item-active {
+  color: #f82385 !important;
+}
+.rs-nav-item{
+  background-color: #FFFFFF !important;
+}
+.rs-nav-item-visited{
+  color: $mainColor !important;
+  background-color: #FFFFFF !important;
+}
+
+.rs-dropdown-item-focus{
+  color: #f82385 !important;
+  background-color: #FFFFFF !important;
+}

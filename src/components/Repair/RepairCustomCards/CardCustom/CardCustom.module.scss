@@ -1,0 +1,23 @@
+.Card {
+  text-align: center;
+  height: 162px;
+  border-radius: 10px;
+  background: rgb(219, 7, 131);
+  background: linear-gradient(126deg, rgb(219, 7, 131) 0%, rgb(142, 6, 148) 100%);
+}
+.CardContent {
+  padding: 19px 53px;
+  h1 {
+    font-weight: 500;
+    font-size: 20px;
+    color: #FFFFFF;
+  }
+}
+.CardImg {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  background: #FAFAFA;
+  border-radius: 8px;
+}

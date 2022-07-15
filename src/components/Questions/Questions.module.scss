@@ -1,0 +1,14 @@
+@import '../../scss/main';
+
+.Questions {
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 0px 0px 100px 0px;
+  h1 {
+    font-weight: 500;
+    font-size: rem(40);
+    text-transform: uppercase;
+    color: $mainColor;
+  }
+
+}

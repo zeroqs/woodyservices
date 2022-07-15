@@ -1,0 +1,8 @@
+@import "../../../scss/main";
+
+.adapt {
+  @media (max-width: rem(990)){
+    order: 3;
+  }
+}
+

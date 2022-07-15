@@ -1,0 +1,15 @@
+@import "../../../scss/main";
+
+.TeamMobile {
+  text-align: -webkit-center;
+  content-visibility: hidden;
+  @media (max-width: rem(565)){
+    content-visibility: visible;
+    padding-bottom: 150px;
+  }
+}
+.MeetTeam {
+  @media (max-width: rem(565)){
+    content-visibility: hidden;
+  }
+}

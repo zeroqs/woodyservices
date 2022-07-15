@@ -1,0 +1,42 @@
+@import "../../scss/main";
+.Nav {
+  background: #FFFFFF;
+  padding: 21px 100px;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @media (max-width: rem(1250)){
+    padding: 21px 20px;
+  }
+  a:hover {
+    color: $colorHover;
+    transition: color 0.5s;
+
+  }
+
+
+}
+
+.container {
+  max-width: 1437px;
+  padding: 0px 10px 50px 10px;
+  @media (max-width: rem(1250)){
+    max-width: 1130px;
+    padding: 21px 10px;
+  }
+
+
+  margin: 0 auto;
+}
+a {
+  cursor: pointer;
+  img {
+    cursor: pointer;
+  }
+}
+.Social {
+  @media (max-width: rem(990)){
+    content-visibility: hidden;
+  }
+}

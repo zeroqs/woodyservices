@@ -1,0 +1,28 @@
+@import "../../scss/main";
+
+.Team {
+  max-width: 1172px;
+  margin: 0 auto;
+  padding: 150px 0px;
+  text-align: center;
+
+  .TeamHeader{
+    h1 {
+      font-weight: 500;
+      font-size: rem(40);
+      text-transform: uppercase;
+      color: $mainColor;
+    }
+    p {
+      padding: 30px 0px 40px 0px;
+    }
+  }
+
+  .TeamCards{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}

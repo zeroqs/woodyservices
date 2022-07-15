@@ -1,0 +1,95 @@
+@import '../../scss/main';
+
+.Footer {
+  background: #160142;
+}
+.Content {
+  padding-top: 56px;
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  @media (max-width: rem(915)){
+    flex-direction: column;
+  }
+  gap: 50px;
+}
+
+.MenuFooterMobile {
+  display: none;
+  @media (max-width: rem(915)){
+    display: block;
+
+  }
+}
+
+.MenuFooter {
+  display: block;
+  @media (max-width: rem(915)){
+    flex-direction: column;
+    display: none;
+  }
+  color : #fafafa;
+  h1 {
+    font-weight: 500;
+    font-size: 25px;
+  }
+  display: flex;
+  flex-wrap: wrap;
+
+
+  gap: 20px;
+}
+.PhoneFooter {
+  flex: 0 0 auto;
+}
+
+
+.FastFooter {
+  @media (max-width: rem(915)){
+    flex-direction: row;
+    align-items: center;
+  }
+  flex-direction: column;
+  flex-wrap: wrap;
+  .LogoFooter {
+    padding: 5px 24px;
+    background: #FAFAFA;
+    border-radius: 8px;
+    width: 168px;
+  }
+  .LinksFooter {
+
+    .SocialIcon {
+      width: 21px;
+      color: #fff;
+    }
+  }
+  .TextFooter {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 110%;
+    color: #FAFAFA;
+  }
+  display: flex;
+  gap: 25px;
+}
+.PhoneFooter {
+  h1 {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 32px;
+    color: #FAFAFA;
+  }
+}
+
+.MenuLinks {
+
+  flex: 1 1 0px;
+}
+.RepairLinks {
+  flex: 1 1 0px;
+}
+.ContactsLinks {
+  flex: 1 1 0px;
+
+}

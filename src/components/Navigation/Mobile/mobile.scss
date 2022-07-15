@@ -1,0 +1,51 @@
+@import "../../../scss/main";
+
+.mob {
+  overflow: hidden;
+}
+
+.Mobile {
+
+
+  display: flex;
+  flex-direction: column;
+
+  ul {
+    display: flex;
+    gap: 50px;
+    text-align: center;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    min-height: 100%;
+    background: rgba(22, 1, 66, 0.64);
+    padding-top: 30%;
+
+    a {
+      padding: 20px;
+      color: #FFFFFF;
+    }
+  }
+
+  @media (max-width: rem(990)){
+    content-visibility: visible;
+
+
+  }
+
+  a:hover {
+    color: $colorHover;
+    transition: color 0.5s;
+  }
+  content-visibility: hidden;
+
+
+}
+
+.Hamburger {
+  right: 5%;
+  z-index: 5;
+}

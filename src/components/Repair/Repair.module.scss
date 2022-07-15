@@ -1,0 +1,46 @@
+@import "../../scss/main";
+
+.CardRepairs {
+  padding-bottom: 100px;
+}
+
+.CardsHeader {
+  max-width: 1170px;
+  margin: 0 auto;
+  h1 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: rem(40);
+    text-transform: uppercase;
+    color: $mainColor;
+    text-align: center;
+  }
+  p {
+    padding: 30px 0px 50px 0px;
+    text-align: center;
+  }
+  @media (max-width: rem(1140)){
+    padding-top: 200px;
+  }@media (max-width: rem(750)){
+  padding-top: 10px;
+}
+}
+
+
+.CardsMain {
+  max-width: 1170px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: repeat(3,1fr);
+  grid-template-columns: repeat(2,1fr);
+  justify-items: center;
+  column-gap: 30px;
+  row-gap: 35px;
+  @media (max-width: rem(685)){
+    grid-template-columns: repeat(1,1fr);
+
+  }
+}
+.swiper {
+  padding-bottom: 100px;
+}

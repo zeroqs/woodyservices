@@ -1,0 +1,46 @@
+@import '../../scss/main';
+
+.Contacts {
+  padding: 40px 10px 40px 10px;
+  max-width: 1030px;
+  margin: 0 auto;
+  h1 {
+    padding-bottom: 40px;
+    font-weight: 500;
+    font-size: rem(40);
+    text-transform: uppercase;
+    color: $mainColor;
+  }
+}
+.ContactsContent {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+}
+.ContactsMap {
+  iframe {
+    max-width: 100%;
+    filter: drop-shadow(9px 10px 11px rgba(196, 196, 196, 0.34));
+    border-radius: 20px;
+  }
+}
+.ContactsList {
+
+  h2 {
+    padding-bottom: 10px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: rem(25);
+    color: $mainColor;
+
+  }
+  li {
+    padding-bottom: 10px;
+    color: $mainColor;
+    gap: 15px;
+    display: flex;
+    align-items: center;
+  }
+}

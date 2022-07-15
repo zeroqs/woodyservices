@@ -1,0 +1,22 @@
+@import "../../../scss/main";
+
+
+.CareCard {
+  text-align: center;
+  background: #FFFFFF;
+  border-radius: 8px;
+  width: 253px;
+  @media (max-width: rem(553)){
+    width: 100%;
+    img {
+      content-visibility: hidden;
+    }
+  }
+  h1 {
+    font-weight: 600;
+    color: $mainColor;
+  }
+}
+.CardContent {
+  padding: 30px 10px 30px 10px;
+}

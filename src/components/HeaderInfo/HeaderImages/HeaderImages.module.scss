@@ -1,0 +1,76 @@
+@import "../../../scss/main";
+
+
+.HeaderImages {
+  flex: 1 1 40%;
+  display: flex;
+  gap: 10px;
+  @media (max-width: rem(855)) {
+    content-visibility: hidden;
+  }
+}
+
+.upper {
+  content-visibility: hidden;
+  grid-area: upper;
+}
+.down {
+  grid-area: down;
+}
+
+.firstImage {
+  display: grid;
+  grid-template-areas:
+    "upper"
+    "down";
+  grid-gap: 20px;
+  justify-items: flex-end;
+}
+
+.secondImage {
+  display: flex;
+  flex-direction: column;
+  gap:32px;
+  padding-top: 21px;
+}
+.thirdImage {
+  padding-left: 35px;
+  position: relative;
+  img {
+    position: absolute;
+    left: 35px;
+    top: 0;
+  }
+}
+.fourthImage {
+}
+@media (max-width: rem(1440)){
+  .secondImage {
+    content-visibility: hidden;
+  }
+  .upper {
+    content-visibility: visible;
+  }
+}
+.counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+  width: 324px;
+  height: 114px;
+  flex-direction: column;
+  gap: 6px;
+  background-image: url("./second.png");
+
+  h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+  }
+  span {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+  }
+}
