@@ -1,9 +1,12 @@
 import React from 'react';
-import styles from "./mobile.scss";
+import  "./mobile.scss";
 import {HiMenuAlt2} from 'react-icons/hi'
 import {useState} from "react";
 import {VscChromeClose} from 'react-icons/vsc'
-import {Link} from "react-router-dom";
+import {Link as LinkHome} from 'react-router-dom';
+import {Link} from 'react-scroll';
+
+import {Nav, Panel, PanelGroup} from 'rsuite';
 
 
 function Mobile() {
@@ -16,27 +19,53 @@ function Mobile() {
   };
   function NavLinksMobile() {
     return (
-      <ul >
+      <ul className="NavBar">
+        <LinkHome onClick={()=> {
+          setOpen(!open);
+          handleClick();
+        }} to="/">Главная</LinkHome>
+          <PanelGroup accordion >
+            <Panel header="Что ремонтируем">
+              <ul className="DropDownList">
+                <li onClick={()=> {
+                  setOpen(!open);
+                  handleClick();
+                }}><LinkHome to="/services">Смартфоны</LinkHome></li>
+                <li onClick={()=> {
+                  setOpen(!open);
+                  handleClick();
+                }}><LinkHome to="/services">Планшеты</LinkHome></li>
+                <li onClick={()=> {
+                  setOpen(!open);
+                  handleClick();
+                }}><LinkHome to="/services">Ноутбуки и ПК</LinkHome></li>
+                <li onClick={()=> {
+                  setOpen(!open);
+                  handleClick();
+                }}><LinkHome to="/services">Игровые приставки</LinkHome></li>
+                <li onClick={()=> {
+                  setOpen(!open);
+                  handleClick();
+                }}><LinkHome to="/services">Видеокарты</LinkHome></li>
+                <li onClick={()=> {
+                  setOpen(!open);
+                  handleClick();
+                }}><LinkHome to="/services">Мелкобытовую технику</LinkHome></li>
+              </ul>
+            </Panel>
+          </PanelGroup>
         <Link onClick={()=> {
           setOpen(!open);
           handleClick();
-        }} to="/">Главная</Link>
+        }} to="Meet" smooth={true} duration={1000}>О нас</Link>
         <Link onClick={()=> {
           setOpen(!open);
           handleClick();
-        }} to="/services">Что ремонтируем</Link>
-        <Link onClick={()=> {
-          setOpen(!open);
-          handleClick();
-        }} to="/about">О нас</Link>
-        <Link onClick={()=> {
-          setOpen(!open);
-          handleClick();
-        }} to="/reviews">Отзывы</Link>
+        }} to="Reviews" smooth={true} duration={1000}>Отзывы</Link>
         <Link  onClick={()=> {
           setOpen(!open);
           handleClick();
-        }}to="/contact">Контакты</Link>
+        }}to="Contacts" smooth={true} duration={1000}>Контакты</Link>
       </ul>
     )
   }

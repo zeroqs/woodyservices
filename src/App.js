@@ -1,6 +1,7 @@
 import './scss/App.scss';
 import Header from "./components/Header/Header";
 import Routers from "./components/Header/Route/Routers";
+import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 
 
 function App({state}) {
@@ -9,6 +10,7 @@ function App({state}) {
       <div className="preview" id="preview">
         <Header Counter={state.HeaderInfo.Counter} textHeader={state.HeaderInfo}/>
       </div>
+      <ScrollToTop />
       <Routers Team={state.Team}
                CareInfo={state.CareInfo}
                CardInfo={state.CardInfo}
