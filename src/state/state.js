@@ -33,7 +33,7 @@ import Brands6 from './Brand/Rectangle 93.png'
 import accum from './Repair/RepairCustom/accum.svg'
 import charge from './Repair/RepairCustom/charge.svg'
 import display from './Repair/RepairCustom/display.svg'
-import diagnostik from './Repair/RepairCustom/diagnostik.svg'
+import diagnostic from './Repair/RepairCustom/diagnostik.svg'
 
 let state = {
   HeaderInfo : {
@@ -98,19 +98,41 @@ let state = {
     {id:10,  img:Brands5},
     {id:11,  img:Brands6},
   ],
-  RepairCustom : [
-    {id:0,  img:Brands1},
-    {id:1,  img:Brands2},
-    {id:2,  img:Brands3},
-    {id:3,  img:Brands4},
-    {id:4,  img:Brands5},
-    {id:5,  img:Brands6},
-    {id:6,  img:Brands1},
-    {id:7,  img:Brands2},
-    {id:8,  img:Brands3},
-    {id:9,  img:Brands4},
-    {id:10,  img:Brands5},
-    {id:11,  img:Brands6},
+  RepairCustom : {
+    FirstPath : [
+      {id:0,  text:"Замена аккамулятора",img:accum},
+      {id:1,  text:"Ремонт зарядного",img:charge},
+      {id:2,  text:"Замена дисплея",img:display},
+      {id:3,  text:"Общая диагностика ",img:diagnostic},
+    ],
+    SecondPath : [
+      {id:4,  text:"Замена аккамулятора",img:accum},
+      {id:5,  text:"Ремонт зарядного",img:charge},
+      {id:6,  text:"Замена дисплея",img:display},
+      {id:7,  text:"Общая диагностика ",img:diagnostic},
+    ],
+  },
+  Models : [
+    {
+      "label": "Huawei",
+      "value": "Huawei",
+      "role": "Master"
+    },
+    {
+      "label": "Samsung",
+      "value": "Samsung",
+      "role": "Master"
+    },
+    {
+      "label": "Nokia",
+      "value": "Nokia",
+      "role": "Master"
+    },
+    {
+      "label": "iPhone",
+      "value": "iPhone",
+      "role": "Master"
+    },
   ],
 }
 

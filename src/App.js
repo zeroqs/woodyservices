@@ -17,6 +17,8 @@ function App({state}) {
                Review={state.Review}
                ProtectCards = {state.ProtectCards}
                Brands = {state.Brands}
+               RepairCustom = {state.RepairCustom}
+               Models = {state.Models}
       />
     </div>
   );

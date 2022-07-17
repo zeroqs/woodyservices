@@ -8,9 +8,11 @@
 .CardContent {
   padding: 19px 53px;
   h1 {
+    color: #FFFFFF;
+    font: inherit;
     font-weight: 500;
     font-size: 20px;
-    color: #FFFFFF;
+    padding-top: 10px;
   }
 }
 .CardImg {

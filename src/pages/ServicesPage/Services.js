@@ -9,16 +9,24 @@ import MeetTeam from "../../components/Team/MeetTeam/MeetTeam";
 import Reviews from "../../components/Reviews/Reviews";
 import Protect from "../../components/Protect/Protect";
 import RepairCards from "../../components/Repair/RepairCards/RepairCards";
-import RepairCustomCards from "../../components/Repair/RepairCustomCards/RepairCustomCards";
+import RepairCustomBlock from "../../components/Repair/RepairCustom/RepairCustom";
+import FormRepair from "../../components/FormRepair/FormRepair";
+import Blog from "../../components/Blog/Blog";
 
-export function Services({CardInfo, RepairInfo, CareInfo, Team, Review, ProtectCards, Brands}) {
+export function Services({Models,CardInfo, RepairCustom, CareInfo, Team, Review, ProtectCards, Brands}) {
   return (
     <>
       <section className="RepairSection" id="Repair">
         <RepairCards CardInfo={CardInfo}/>
       </section>
-      <section>
-        <RepairCustomCards/>
+      <section className="RepairCustom" id="RepairCustom">
+        <RepairCustomBlock RepairCustom={RepairCustom} />
+      </section>
+      <section className="FormRepair" id="FormRepair">
+        <FormRepair Models={Models}/>
+      </section>
+      <section className="Blog" id="Blog">
+        <Blog/>
       </section>
       <section className="CareSection" id="Care">
         <Care CareInfo={CareInfo}/>

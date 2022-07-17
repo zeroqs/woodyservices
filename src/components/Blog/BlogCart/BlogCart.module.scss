@@ -1,0 +1,26 @@
+.Card {
+  border-radius: 10px;
+  background: linear-gradient(10.92deg, rgba(33, 0, 36, 0.9) 24.19%, rgba(37, 0, 56, 0) 90.44%);
+
+  position: relative;
+}
+.Text {
+  display: flex;
+  gap: 100px;
+  position: absolute;
+  bottom: 30px;
+  left: 45px;
+  color: #FFFFFF;
+  .texBtn {
+    padding-bottom: 3px;
+    border-bottom: 2px solid #E41F7B;
+    align-self: end;
+  }
+  .textHeader {
+
+  }
+}
+.img {
+  position: relative;
+  z-index: -1;
+}
